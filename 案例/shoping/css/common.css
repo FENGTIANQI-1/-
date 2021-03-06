@@ -1,0 +1,288 @@
+/* 字体标签引用  注意路径变化*/
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tizj7d');
+    src: url('../fonts/icomoon.eot?tizj7d#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tizj7d') format('truetype'), url('../fonts/icomoon.woff?tizj7d') format('woff'), url('../fonts/icomoon.svg?tizj7d#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right
+}
+
+.style_red {
+    color: #c81623;
+}
+
+/* 快捷导航模块 */
+
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+/* 选择所有偶数的小li */
+
+.shortcut .w .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.shortcut .w .fr ul .arrow-icon::after {
+    content: "\e901";
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+
+/* 头部标签制作 */
+
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo h1 a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../image/logo.png) no-repeat;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: red 2px solid;
+}
+
+.search input {
+    /* 加浮动的原因是行内块元素相邻有一个距离，浮动以后距离就消除了 */
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    /* 加浮动的原因是行内块元素相邻有一个距离，浮动以后距离就消除了 */
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: red;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords ul li {
+    float: left;
+    margin: 0 10px 0;
+}
+
+.shopcat {
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    line-height: 35px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.shopcat::after {
+    content: "\e902";
+    font-family: 'icomoon';
+}
+
+.shopcat::before {
+    content: "\e903";
+    font-family: 'icomoon';
+    color: red;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105PX;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 7px 7px 7px 0;
+    background-color: red;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.dropdpwn {
+    float: left;
+    color: #ead7d3;
+    width: 210px;
+    height: 45px;
+    background: #b2191b;
+}
+
+.dropdpwn .dt {
+    height: 100%;
+    width: 100%;
+    background-color: #b2191b;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.dropdpwn .dd {
+    /* display: none; */
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+.dropdpwn .dd ul li {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 1px;
+}
+
+.dropdpwn .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+    padding-left: 5px;
+}
+
+.dropdpwn .dd ul li a::after {
+    position: absolute;
+    right: 10px;
+    content: "\e902";
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+
+.dropdpwn .dd ul li:hover {
+    background-color: #fff;
+}
+
+.dropdpwn .dd ul li:hover a {
+    color: #c81623;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 47px;
+    line-height: 47px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+
+/* 底部模块制作 */
+
+.footer {
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc
+}
+
+.mod_service ul li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 35px;
+    margin-top: 10px;
+}
+
+.mod_service ul li h5 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    background: url(../image/jinglin.png) no-repeat -252px -2px;
+}
+
+.service_txt h4 {
+    font-size: 14px;
+}
+
+.service_txt p {
+    font-size: 12px;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.mod_copyright {
+    text-align: center;
+}
+
+.mod_copyright .links {
+    margin: 15px 0;
+}
